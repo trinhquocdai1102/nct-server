@@ -3,7 +3,7 @@ const favoriteRouter = require('./routes/Favorite');
 const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
-const APICommon = '/api/v1';
+const APICommon = '';
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
