@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 app.use(`${APICommon}/favorite`, favoriteRouter);
-app.use('/', () => {
+app.use('/', (req, res) => {
     res.json('home');
 });
 
